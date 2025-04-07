@@ -1,0 +1,1 @@
+<?phprequire_once("Library.php");require_once("Controller.php");try {	accessControl();		$action =getRoute();	$action();}catch (Exception $e) {	afficher("vError.php",["errorMessage"=> $e->getMessage()]);}
